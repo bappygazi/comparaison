@@ -47,7 +47,7 @@
                             id="v-pills-croiseé-tab" data-bs-toggle="pill" data-bs-target="#v-pills-croiseé"
                             type="button" role="tab" aria-controls="v-pills-croiseé" aria-selected="false">
                             <div class="selector-btn">
-                                <input type="radio" value="None" id="selectorTwo" name="radio" checked />
+                                <input type="radio" value="None" id="selectorTwo" name="radio" />
                                 <label class="label-point" for="selectorTwo"></label>
                             </div>
                             <label class=" radio-text ms-3" for="selectorTwo">Croiseé Cross</label>
@@ -67,7 +67,7 @@
                             data-bs-toggle="pill" data-bs-target="#v-pills-news" type="button" role="tab"
                             aria-controls="v-pills-news" aria-selected="false">
                             <div class="selector-btn">
-                                <input type="radio" value="None" id="selectorFour" name="radio" />
+                                <input type="radio" value="None" id="selectorFour" name="radio" checked />
                                 <label class="label-point" for="selectorFour"></label>
                             </div>
                             <label class="radio-text ms-3" for="selectorFour">Infos News</label>
@@ -303,7 +303,8 @@
                                             <button class="nav-link text-start rounded-pill py-0 my-1 ps-3"
                                                 id="v-pills-Comunity2-tab" data-bs-toggle="pill"
                                                 data-bs-target="#v-pills-Comunity2" type="button" role="tab"
-                                                aria-controls="v-pills-Comunity2" aria-selected="false">Comunity</button>
+                                                aria-controls="v-pills-Comunity2"
+                                                aria-selected="false">Comunity</button>
 
                                             <button class="nav-link text-start rounded-pill py-0 my-1 ps-3"
                                                 id="v-pills-Users2-tab" data-bs-toggle="pill"
@@ -632,8 +633,20 @@
                                     <div class="review-text text-center py-3">
                                         <p class="mb-1">Evaluer AXS sur cette comparaison à date
                                             Evaluate AXS to date for this comparison</p>
-                                        <a href="#"><img src="./images/star-rating.png" alt="review-icon.png"
-                                                class="img-fluid"></a>
+                                        <div class="star-review d-flex justify-content-center">
+                                            <div class="rate ">
+                                                <input type="radio" id="star5" name="rate" value="5" />
+                                                <label for="star5" title="text">5 stars</label>
+                                                <input type="radio" id="star4" name="rate" value="4" />
+                                                <label for="star4" title="text">4 stars</label>
+                                                <input type="radio" id="star3" name="rate" value="3" />
+                                                <label for="star3" title="text">3 stars</label>
+                                                <input type="radio" id="star2" name="rate" value="2" />
+                                                <label for="star2" title="text">2 stars</label>
+                                                <input type="radio" id="star1" name="rate" value="1" />
+                                                <label for="star1" title="text">1 star</label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
